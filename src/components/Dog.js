@@ -1,11 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const Dog = () => {
+const Dog = (props) => {
     
     return (
         <li>
             <h3>
-                Name of Dog
+                (props.name)
             </h3>
             <button> 
                 Pet Dog 
@@ -13,5 +14,11 @@ const Dog = () => {
         </li>
     );
 }
+
+Dog.propTypes = {
+    name: PropTypes.string.isRequired,
+    favoriteToy: PropTypes.string,
+    chipNumber: PropTypes.number,
+  };
 
 export default Dog;
