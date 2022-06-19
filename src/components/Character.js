@@ -1,4 +1,4 @@
-import "../src/App.js";
+import "../App.js";
 
 function Character() {
   const chrom = {
@@ -9,7 +9,11 @@ function Character() {
     isCool: true,
   };
 
-  return <div></div>;
+  return (
+    <div>
+      <li>Age: {chrom.age}</li>
+    </div>
+  );
 }
 
 export default Character;
