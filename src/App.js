@@ -1,10 +1,11 @@
 import "./App.css";
 import "./components/Character.js";
+import Character from "./components/Character.js";
 
 function App() {
   return (
     <div>
-      <h1>Character</h1>
+      <h1>Video Game Characters</h1>
       <Character />
     </div>
   );

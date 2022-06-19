@@ -2,6 +2,7 @@ import "../App.js";
 
 function Character() {
   const chrom = {
+    name: "Chrom",
     age: 30,
     nationality: "Ylisse",
     hairColor: "Blue",
@@ -11,7 +12,11 @@ function Character() {
 
   return (
     <div>
-      <li>Age: {chrom.age}</li>
+      <h1>Name: {chrom.name}</h1>
+      <ul>
+        <li>Age: {chrom.age}</li>
+        <li>Nationality: {chrom.age}</li>
+      </ul>
     </div>
   );
 }
