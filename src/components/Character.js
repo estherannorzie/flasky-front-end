@@ -1,4 +1,5 @@
 import "../App.js";
+import "./Character.css"
 
 function Character() {
   const chrom = {
@@ -12,7 +13,7 @@ function Character() {
 
   return (
     <div>
-      <h1>Name: {chrom.name}</h1>
+      <h2 className="character__name">Name: {chrom.name}</h2>
       <ul>
         <li>Age: {chrom.age}</li>
         <li>Nationality: {chrom.nationality}</li>
