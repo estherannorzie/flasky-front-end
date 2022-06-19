@@ -16,6 +16,9 @@ function Character() {
       <ul>
         <li>Age: {chrom.age}</li>
         <li>Nationality: {chrom.age}</li>
+        <li>Hair Color: {chrom.hairColor}</li>
+        <li>occupation: {chrom.occupation}</li>
+        <li>Are they cool?: {chrom.isCool ? "Yes" : "No"}</li>        
       </ul>
     </div>
   );
