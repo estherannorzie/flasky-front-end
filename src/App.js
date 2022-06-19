@@ -7,6 +7,8 @@ function App() {
     <div>
       <h1>Video Game Characters</h1>
       <Character />
+      <Character />
+      <Character />
     </div>
   );
 }
