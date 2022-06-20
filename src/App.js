@@ -1,6 +1,5 @@
 import "./App.css";
 import "./components/Character.js";
-// import Character from "./components/Character.js";
 import CharacterList from "./components/CharacterList";
 
 function App() {
