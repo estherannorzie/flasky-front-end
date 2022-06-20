@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div>
-      <h1>Video Game Characters</h1>
+      <h1>Fire Emblem Awakening Characters</h1>
       <CharacterList characters={characters} />
     </div>
   );
