@@ -1,28 +1,19 @@
 import "../App.js";
 import "./Character.css";
 
-function Character() {
-  const chrom = {
-    name: "Chrom",
-    age: 21,
-    nationality: "Ylisse",
-    hairColor: "Blue",
-    occupation: "Exalt",
-    isCool: true,
-  };
-
+const Character = (props) => {
   return (
     <div>
-      <h2 className="character__name">Name: {chrom.name}</h2>
+      <h2 className="character__name">Name: {props.name}</h2>
       <ul>
-        <li>Age: {chrom.age}</li>
-        <li>Nationality: {chrom.nationality}</li>
-        <li>Hair Color: {chrom.hairColor}</li>
-        <li>Occupation: {chrom.occupation}</li>
-        <li>Are they cool?: {chrom.isCool ? "Yes" : "No"}</li>
+        <li>Age: {props.age}</li>
+        <li>Nationality: {props.nationality}</li>
+        <li>Hair Color: {props.hairColor}</li>
+        <li>Occupation: {props.occupation}</li>
+        <li>Are they alive?: {props.alive ? "Yes" : "No"}</li>
       </ul>
     </div>
   );
-}
+};
 
 export default Character;
