@@ -1,10 +1,10 @@
 import "../App.js";
-import "./Character.css"
+import "./Character.css";
 
 function Character() {
   const chrom = {
     name: "Chrom",
-    age: 30,
+    age: 21,
     nationality: "Ylisse",
     hairColor: "Blue",
     occupation: "Exalt",
@@ -19,7 +19,7 @@ function Character() {
         <li>Nationality: {chrom.nationality}</li>
         <li>Hair Color: {chrom.hairColor}</li>
         <li>occupation: {chrom.occupation}</li>
-        <li>Are they cool?: {chrom.isCool ? "Yes" : "No"}</li>        
+        <li>Are they cool?: {chrom.isCool ? "Yes" : "No"}</li>
       </ul>
     </div>
   );
