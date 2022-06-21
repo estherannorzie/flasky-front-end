@@ -8,7 +8,7 @@ const Character = (props) => {
       <ul>
         <li>Age: {props.age}</li>
         <li>Nationality: {props.nationality}</li>
-        <li>Hair Color: {props.hairColor}</li>
+        <li>Hair color: {props.hairColor}</li>
         <li>Occupation: {props.occupation}</li>
         <li>Are they alive?: {props.alive ? "Yes" : "No"}</li>
       </ul>
