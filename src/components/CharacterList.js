@@ -6,12 +6,13 @@ const CharacterList = (props) => {
   const characterComponents = props.characters.map((character) => {
     return (
       <Character
+        key={character.id}
         name={character.name}
         age={character.age}
         nationality={character.nationality}
         hairColor={character.hairColor}
         occupation={character.occupation}
-        alive={character.alive}
+        isAlive={character.isAlive}
       />
     );
   });
@@ -19,12 +20,7 @@ const CharacterList = (props) => {
 };
 
 CharacterList.propTypes = {
-  name: PropTypes.string.isRequired,
-  age: PropTypes.string.isRequired,
-  nationality: PropTypes.string.isRequired,
-  hairColor: PropTypes.string.isRequired,
-  occupation: PropTypes.string.isRequired,
-  alive: PropTypes.bool.isRequired,
+  characters: PropTypes.array.isRequired,
 };
 
 export default CharacterList;

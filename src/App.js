@@ -11,7 +11,7 @@ function App() {
       nationality: "Ylisse",
       hairColor: "Blue",
       occupation: "Exalt of Ylisse",
-      alive: true,
+      isAlive: true,
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ function App() {
       nationality: "Ylisse",
       hairColor: "Blonde",
       occupation: "Exalt of Ylisse",
-      alive: false,
+      isAlive: false,
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ function App() {
       nationality: "Ylisse",
       hairColor: "Blonde",
       occupation: "Princess of Ylisse",
-      alive: true,
+      isAlive: true,
     },
   ];
 

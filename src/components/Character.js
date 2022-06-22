@@ -1,5 +1,6 @@
 import "../App.js";
 import "./Character.css";
+import PropTypes from "prop-types";
 
 const Character = (props) => {
   return (
@@ -14,6 +15,15 @@ const Character = (props) => {
       </ul>
     </div>
   );
+};
+
+Character.propTypes = {
+  name: PropTypes.string.isRequired,
+  age: PropTypes.number.isRequired,
+  nationality: PropTypes.string.isRequired,
+  hairColor: PropTypes.string.isRequired,
+  occupation: PropTypes.string.isRequired,
+  isAlive: PropTypes.bool.isRequired,
 };
 
 export default Character;
