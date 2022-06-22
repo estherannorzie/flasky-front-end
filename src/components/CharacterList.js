@@ -1,7 +1,7 @@
 import React from "react";
 import Character from "./Character.js";
 import PropTypes from "prop-types";
-
+// i can use props here, since characters is a property of CharacterList
 const CharacterList = (props) => {
   const characterComponents = props.characters.map((character) => {
     return (

@@ -13,6 +13,7 @@ const Character = (props) => {
         <li>Occupation: {props.occupation}</li>
         <li>Are they alive?: {props.alive ? "Yes" : "No"}</li>
       </ul>
+      <button>Toggle Life Status</button>
     </div>
   );
 };
