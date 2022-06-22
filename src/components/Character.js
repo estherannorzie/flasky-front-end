@@ -1,8 +1,13 @@
 import "../App.js";
 import "./Character.css";
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 const Character = (props) => {
+  // useState is the default when first rendered, lifeStatus changes
+  const [isAlive, setIsAlive] = useState(props.isAlive);
+  const toggleLifeStatus = isAlive ? setIsAlive(false) : setIsAlive(true);
+
   return (
     <div>
       <h2 className="character__name">Name: {props.name}</h2>
@@ -11,7 +16,8 @@ const Character = (props) => {
         <li>Nationality: {props.nationality}</li>
         <li>Hair color: {props.hairColor}</li>
         <li>Occupation: {props.occupation}</li>
-        <li>Are they alive?: {props.alive ? "Yes" : "No"}</li>
+        {/* removed props from link 18 so it could match the state in line 8 */}
+        <li>Are they alive?: {isAlive ? "Yes" : "No"}</li>
       </ul>
       <button>Toggle Life Status</button>
     </div>
