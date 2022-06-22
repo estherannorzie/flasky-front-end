@@ -1,9 +1,10 @@
 import "./App.css";
 import "./components/Character.js";
 import CharacterList from "./components/CharacterList";
+import { useState } from "react";
 
 function App() {
-  const characters = [
+  const [characters, setCharacters] = useState([
     {
       id: 1,
       name: "Chrom",
@@ -31,7 +32,7 @@ function App() {
       occupation: "Princess of Ylisse",
       isAlive: true,
     },
-  ];
+  ]);
 
   return (
     <div>

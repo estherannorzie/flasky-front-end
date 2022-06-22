@@ -11,7 +11,7 @@ const Character = (props) => {
     isAlive ? setIsAlive(false) : setIsAlive(true);
   };
 
-  const [hairColor, setHairColor] = useState(props.hairColor);
+  // const [hairColor, setHairColor] = useState(props.hairColor);
   // callback function
   // const changeHairColor = (event) => {
   //   setHairColor(event.target.value);
@@ -24,18 +24,19 @@ const Character = (props) => {
         {/* props are removed for hairColor and life status since it's already defined in state */}
         <li>Age: {props.age}</li>
         <li>Nationality: {props.nationality}</li>
-        <li>Hair color: {hairColor}</li>
+        {/* <li>Hair color: {hairColor}</li> */}
+        <li>Hair color: {props.hairColor}</li>
         <li>Occupation: {props.occupation}</li>
         <li>Are they alive?: {isAlive ? "Yes" : "No"}</li>
       </ul>
       <button onClick={toggleLifeStatus}>Toggle Life Status</button>
-      <input
+      {/* <input
         type="text"
         value={hairColor}
         onChange={(event) => {
           setHairColor(event.target.value);
         }}
-      ></input>
+      ></input> */}
     </div>
   );
 };
