@@ -34,6 +34,10 @@ function App() {
     },
   ]);
 
+  const toggleLifeStatus = () => {
+    console.log("In the toggleLifeStatus function!");
+  };
+
   return (
     <div>
       <h1>Fire Emblem: Awakening Characters</h1>
