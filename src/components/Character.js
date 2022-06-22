@@ -13,9 +13,9 @@ const Character = (props) => {
 
   const [hairColor, setHairColor] = useState(props.hairColor);
   // callback function
-  const changeHairColor = (event) => {
-    setHairColor(event.target.value);
-  };
+  // const changeHairColor = (event) => {
+  //   setHairColor(event.target.value);
+  // };
 
   return (
     <div>
@@ -29,7 +29,13 @@ const Character = (props) => {
         <li>Are they alive?: {isAlive ? "Yes" : "No"}</li>
       </ul>
       <button onClick={toggleLifeStatus}>Toggle Life Status</button>
-      <input type="text" value={hairColor} onChange={changeHairColor}></input>
+      <input
+        type="text"
+        value={hairColor}
+        onChange={(event) => {
+          setHairColor(event.target.value);
+        }}
+      ></input>
     </div>
   );
 };
