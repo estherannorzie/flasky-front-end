@@ -6,7 +6,10 @@ import { useState } from "react";
 const Character = (props) => {
   // useState is the default when first rendered, lifeStatus changes
   const [isAlive, setIsAlive] = useState(props.isAlive);
-  const toggleLifeStatus = isAlive ? setIsAlive(false) : setIsAlive(true);
+  // callback function
+  const toggleLifeStatus = () => {
+    isAlive ? setIsAlive(false) : setIsAlive(true);
+  };
 
   return (
     <div>
@@ -19,7 +22,7 @@ const Character = (props) => {
         {/* removed props from link 18 so it could match the state in line 8 */}
         <li>Are they alive?: {isAlive ? "Yes" : "No"}</li>
       </ul>
-      <button>Toggle Life Status</button>
+      <button onClick={toggleLifeStatus}>Toggle Life Status</button>
     </div>
   );
 };
