@@ -27,7 +27,17 @@ const CharacterList = (props) => {
 };
 
 CharacterList.propTypes = {
-  characters: PropTypes.array.isRequired,
+  characters: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.name.isRequired,
+      age: PropTypes.number.isRequired,
+      nationality: PropTypes.string.isRequired,
+      hairColor: PropTypes.string.isRequired,
+      occupation: PropTypes.string.isRequired,
+      isAlive: PropTypes.bool.isRequired,
+    })
+  ),
 };
 
 export default CharacterList;
