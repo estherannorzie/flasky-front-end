@@ -12,6 +12,11 @@ const Character = (props) => {
     props.lifeStatusCallback(props.id);
   };
 
+  // deleteCharacter function
+  const deleteCharacter = () => {
+    props.deleteCharacterCallback(props.id);
+  };
+
   return (
     <div>
       <h2 className="character__name">Name: {props.name}</h2>
@@ -24,7 +29,7 @@ const Character = (props) => {
         <li>Are they alive?: {props.isAlive ? "Yes" : "No"}</li>
       </ul>
       <button onClick={toggleLifeStatus}>Toggle Life Status</button>
-      <button>Delete</button>
+      <button onClick={deleteCharacter}>Delete</button>
       {/* <input
         type="text"
         value={hairColor}

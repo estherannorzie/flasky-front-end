@@ -19,6 +19,7 @@ const CharacterList = (props) => {
         isAlive={character.isAlive}
         // callback prop added, it doesn't live inside of characters which is why we used props.[thing]
         lifeStatusCallback={props.lifeStatusCallback}
+        deleteCharacterCallback={props.deleteCharacterCallback}
       />
     );
   });

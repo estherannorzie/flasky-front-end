@@ -46,6 +46,18 @@ function App() {
     setCharacters(newCharacters);
   };
 
+  const deleteCharacter = (id) => {
+    console.log("In the deleteCharacter function!");
+    const newCharacters = [];
+    for (const character of characters) {
+      if (character.id === id) {
+        continue;
+      }
+      newCharacters.push(character);
+    }
+    setCharacters(newCharacters);
+  };
+
   return (
     <div>
       <h1>Fire Emblem: Awakening Characters</h1>
@@ -54,6 +66,7 @@ function App() {
         // these are like the keys for props access with dot notation
         characters={characters}
         lifeStatusCallback={toggleLifeStatus}
+        deleteCharacterCallback={deleteCharacter}
       />
     </div>
   );
