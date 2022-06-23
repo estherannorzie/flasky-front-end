@@ -2,6 +2,7 @@ import React from "react";
 import Character from "./Character.js";
 import PropTypes from "prop-types";
 // use props here, since characters is a property of CharacterList
+// i also have access to toggleLifeStatus
 const CharacterList = (props) => {
   const characterComponents = props.characters.map((character) => {
     return (
@@ -16,6 +17,7 @@ const CharacterList = (props) => {
         hairColor={character.hairColor}
         occupation={character.occupation}
         isAlive={character.isAlive}
+        toggleLifeStatus={props.toggleLifeStatusCallback}
       />
     );
   });

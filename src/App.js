@@ -42,7 +42,10 @@ function App() {
     <div>
       <h1>Fire Emblem: Awakening Characters</h1>
       {/* the characters array becomes a property of CharacterList */}
-      <CharacterList characters={characters} />
+      <CharacterList
+        characters={characters}
+        toggleLifeStatusCallback={toggleLifeStatus}
+      />
     </div>
   );
 }
