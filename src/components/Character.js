@@ -42,6 +42,7 @@ const Character = (props) => {
 };
 
 Character.propTypes = {
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   age: PropTypes.number.isRequired,
   nationality: PropTypes.string.isRequired,
