@@ -17,6 +17,7 @@ const CharacterList = (props) => {
         hairColor={character.hairColor}
         occupation={character.occupation}
         isAlive={character.isAlive}
+        // callback prop added
         lifeStatusCallback={props.lifeStatusCallback}
       />
     );

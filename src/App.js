@@ -40,8 +40,8 @@ function App() {
     for (const character of characters) {
       if (character.id === id) {
         character.isAlive = !character.isAlive;
-        newCharacters.push(character);
       }
+      newCharacters.push(character);
     }
     setCharacters(newCharacters);
   };
