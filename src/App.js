@@ -34,8 +34,16 @@ function App() {
     },
   ]);
 
-  const toggleLifeStatus = () => {
+  const toggleLifeStatus = (id) => {
     console.log("In the toggleLifeStatus function!");
+    const newCharacters = [];
+    for (const character of characters) {
+      if (character.id === id) {
+        character.isAlive = !character.isAlive;
+        newCharacters.push(character);
+      }
+    }
+    setCharacters(newCharacters);
   };
 
   return (
@@ -44,7 +52,7 @@ function App() {
       {/* the characters array becomes a property of CharacterList */}
       <CharacterList
         characters={characters}
-        toggleLifeStatusCallback={toggleLifeStatus}
+        lifeStatusCallback={toggleLifeStatus}
       />
     </div>
   );

@@ -17,7 +17,7 @@ const CharacterList = (props) => {
         hairColor={character.hairColor}
         occupation={character.occupation}
         isAlive={character.isAlive}
-        toggleLifeStatus={props.toggleLifeStatusCallback}
+        lifeStatusCallback={props.lifeStatusCallback}
       />
     );
   });

@@ -16,6 +16,9 @@ const Character = (props) => {
   // const changeHairColor = (event) => {
   //   setHairColor(event.target.value);
   // };
+  const toggleLifeStatus = () => {
+    props.lifeStatusCallback(props.id);
+  };
 
   return (
     <div>
@@ -30,7 +33,7 @@ const Character = (props) => {
         {/* <li>Are they alive?: {isAlive ? "Yes" : "No"}</li> */}
         <li>Are they alive?: {props.isAlive ? "Yes" : "No"}</li>
       </ul>
-      <button onClick={props.toggleLifeStatus}>Toggle Life Status</button>
+      <button onClick={toggleLifeStatus}>Toggle Life Status</button>
       {/* <input
         type="text"
         value={hairColor}
