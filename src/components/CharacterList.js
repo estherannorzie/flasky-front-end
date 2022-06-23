@@ -17,7 +17,7 @@ const CharacterList = (props) => {
         hairColor={character.hairColor}
         occupation={character.occupation}
         isAlive={character.isAlive}
-        // callback prop added
+        // callback prop added, it doesn't live inside of characters which is why we used props.[thing]
         lifeStatusCallback={props.lifeStatusCallback}
       />
     );

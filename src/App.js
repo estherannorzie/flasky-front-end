@@ -51,6 +51,7 @@ function App() {
       <h1>Fire Emblem: Awakening Characters</h1>
       {/* the characters array becomes a property of CharacterList */}
       <CharacterList
+        // these are like the keys for props access with dot notation
         characters={characters}
         lifeStatusCallback={toggleLifeStatus}
       />

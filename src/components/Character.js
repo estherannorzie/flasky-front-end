@@ -1,16 +1,8 @@
 import "../App.js";
 import "./Character.css";
 import PropTypes from "prop-types";
-// import { useState } from "react";
 
 const Character = (props) => {
-  // // useState is the default when first rendered, lifeStatus changes
-  // const [isAlive, setIsAlive] = useState(props.isAlive);
-  // // callback function
-  // const toggleLifeStatus = () => {
-  //   isAlive ? setIsAlive(false) : setIsAlive(true);
-  // };
-
   // const [hairColor, setHairColor] = useState(props.hairColor);
   // callback function
   // const changeHairColor = (event) => {
@@ -24,16 +16,15 @@ const Character = (props) => {
     <div>
       <h2 className="character__name">Name: {props.name}</h2>
       <ul>
-        {/* props are removed for hairColor and life status since it's already defined in state */}
         <li>Age: {props.age}</li>
         <li>Nationality: {props.nationality}</li>
         {/* <li>Hair color: {hairColor}</li> */}
         <li>Hair color: {props.hairColor}</li>
         <li>Occupation: {props.occupation}</li>
-        {/* <li>Are they alive?: {isAlive ? "Yes" : "No"}</li> */}
         <li>Are they alive?: {props.isAlive ? "Yes" : "No"}</li>
       </ul>
       <button onClick={toggleLifeStatus}>Toggle Life Status</button>
+      <button>Delete</button>
       {/* <input
         type="text"
         value={hairColor}
