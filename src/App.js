@@ -35,7 +35,7 @@ function App() {
   ]);
 
   const toggleLifeStatus = (id) => {
-    console.log("In the toggleLifeStatus function!");
+    // console.log("In the toggleLifeStatus function!");
     const newCharacters = [];
     for (const character of characters) {
       if (character.id === id) {
@@ -47,7 +47,7 @@ function App() {
   };
 
   const deleteCharacter = (id) => {
-    console.log("In the deleteCharacter function!");
+    // console.log("In the deleteCharacter function!");
     const newCharacters = [];
     for (const character of characters) {
       if (character.id === id) {

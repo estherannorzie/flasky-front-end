@@ -12,7 +12,6 @@ const Character = (props) => {
     props.lifeStatusCallback(props.id);
   };
 
-  // deleteCharacter function
   const deleteCharacter = () => {
     props.deleteCharacterCallback(props.id);
   };
@@ -49,6 +48,8 @@ Character.propTypes = {
   hairColor: PropTypes.string.isRequired,
   occupation: PropTypes.string.isRequired,
   isAlive: PropTypes.bool.isRequired,
+  lifeStatusCallback: PropTypes.func.isRequired,
+  deleteCharacterCallback: PropTypes.func.isRequired,
 };
 
 export default Character;

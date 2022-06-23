@@ -30,7 +30,7 @@ CharacterList.propTypes = {
   characters: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-      name: PropTypes.name.isRequired,
+      name: PropTypes.string.isRequired,
       age: PropTypes.number.isRequired,
       nationality: PropTypes.string.isRequired,
       hairColor: PropTypes.string.isRequired,
@@ -38,6 +38,8 @@ CharacterList.propTypes = {
       isAlive: PropTypes.bool.isRequired,
     })
   ),
+  lifeStatusCallback: PropTypes.func.isRequired,
+  deleteCharacterCallback: PropTypes.func.isRequired,
 };
 
 export default CharacterList;
